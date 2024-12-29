@@ -14,7 +14,7 @@ class VideoHandler:
     def __init__(self, url):
         self.url = url
         if not os.path.exists(os.path.join(self.basePath, "outputs")):
-            os.mkdir(os.path.exists(os.path.join(self.basePath, "outputs")))
+            os.mkdir(os.path.join(self.basePath, "outputs"))
         self.getVideoInfo()
 
     def changeDir(self, to_outputs):
